@@ -25,7 +25,7 @@ These simple to use bash scripts will help you understand just how easy it is to
 - nuage-openstack-neutronclient-6.0.0-4.0.8_170_nuage.noarch.rpm
 - nuagenetlib-9.0.0-4.0.8_170_nuage.noarch.rpm
 
-## Change the IP of NFS Server within both .bash scripts to your own NFS Server
+## Change the NFS Server IP within both .bash scripts to your own NFS Server
 ```
 root@1.2.3.4:/share/nfs/nuage/4.0r8/extracted
 ```
