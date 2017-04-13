@@ -4,7 +4,7 @@ RDO PackStack Newton with Nuage Integration BASH Script
 
 These simple to use bash scripts will help you understand just how easy it is to install and integrate an OpenStack installation consisting of 1 controller and 2 compute hosts.
 
-## Prerequisits include the following:
+## Prerequisites include the following:
 - 3x CentOS 7.3 with yum update and epel enabled (1 as the Controller and 2 for Compute Nodes)
 - Nuage v4.0R8 VSD installed
 - Nuage v4.0R8 VSCs (2) installed
@@ -24,6 +24,11 @@ These simple to use bash scripts will help you understand just how easy it is to
 - nuage-openstack-neutron-9.0.0-4.0.8_170_nuage.noarch.rpm
 - nuage-openstack-neutronclient-6.0.0-4.0.8_170_nuage.noarch.rpm
 - nuagenetlib-9.0.0-4.0.8_170_nuage.noarch.rpm
+
+## Change the IP of NFS Server within both .bash scripts to your own NFS Server
+```
+root@1.2.3.4:/share/nfs/nuage/4.0r8/extracted
+```
 
 The two scripts in this repo will allow you install all required Nuage plugin's and connect the environment to the Nuage VCS deployment.
 
