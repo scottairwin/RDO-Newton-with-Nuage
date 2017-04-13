@@ -25,9 +25,10 @@ These simple to use bash scripts will help you understand just how easy it is to
 - nuage-openstack-neutronclient-6.0.0-4.0.8_170_nuage.noarch.rpm
 - nuagenetlib-9.0.0-4.0.8_170_nuage.noarch.rpm
 
-## Change the NFS Server IP and the ssh-copy-id within both .bash scripts to your
+## Change the NFS Server and ssh-copy-id IP within both .bash scripts to your
 ```
 root@1.2.3.4:/share/nfs/nuage/4.0r8/extracted
+ssh-copy-id root@1.2.3.4
 ```
 
 The two scripts in this repo will allow you install all required Nuage plugin's and connect the environment to the Nuage VCS deployment.
