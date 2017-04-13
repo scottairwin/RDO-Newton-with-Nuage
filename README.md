@@ -1,4 +1,4 @@
-## Intended for Lab purposes only!
+## Intended for Lab use only!
 # RDO-Newton-with-Nuage
 RDO PackStack Newton with Nuage Integration BASH Script
 
