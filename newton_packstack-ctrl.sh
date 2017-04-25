@@ -6,7 +6,7 @@
 SCP_SERVER="root@1.2.3.4:/share/nfs/nuage/4.0r8/extracted"            # ALL NUAGE FILES MUST BE LOCATED HERE (see README.md file)
 TEMP_DIR="/tmp/nuage/"                                                # TEMP DIRECTORY WHERE ALL FILES WILL BE LOCATED
 KEYSTONE_ADMIN_TOKEN="d34b4dbd64704647a61258adb6b0823a"               # KEYSTONE ADMIN TOKEN FOUND IN "head -20 /etc/keystone/keystone.conf"
-NET_PARTITION_NAME="newton"                                           # OpenStack default Net Partiction, will display as tenant name in VSD
+NET_PARTITION_NAME="newton"                                           # OpenStack default Net Partition, will display as tenant name in VSD
 CONFIG_MARIADB_PW="8d3dab21494e4b17"                                  # MYSQL DB PASSWORD FOUND IN "vi /root/packstack-answers*.txt"
 OS_CTLR_IP="192.168.1.172"                                            # OPENSTACK (newton, PACKSTACK) IP ADDRESS
 VSD_IP="192.168.1.181"                                                # VSD IP ADDRESS
