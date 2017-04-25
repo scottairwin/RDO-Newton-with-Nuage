@@ -7,9 +7,11 @@ SCP_SERVER="root@1.2.3.4:/share/nfs/nuage/4.0r8/extracted/"             # ALL NU
 TEMP_DIR="/tmp/nuage/"                                                  # TEMP DIRECTORY WHERE ALL FILES WILL BE LOCATED
 ACTIVE_CONTROLLER="172.16.1.182"                                        # IP of VSC1 CTRL Interface
 STANDBY_CONTROLLER="172.16.1.183"                                       # IP of VSC2 CTRL Interface
+scp_user_access="root@1.2.3.4"                                          # SSH login to scp server for unrestricted access
 
+# Generate SSH key
 ssh-keygen -t rsa
-ssh-copy-id root@1.2.3.4
+ssh-copy-id $scp_user_access
 
 # Install Nuage RPMs
 mkdir -p $TEMP_DIR
