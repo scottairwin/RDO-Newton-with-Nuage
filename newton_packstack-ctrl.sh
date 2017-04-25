@@ -10,10 +10,11 @@ NET_PARTITION_NAME="newton"                                           # OpenStac
 CONFIG_MARIADB_PW="8d3dab21494e4b17"                                  # MYSQL DB PASSWORD FOUND IN "vi /root/packstack-answers*.txt"
 OS_CTLR_IP="192.168.1.172"                                            # OPENSTACK (newton, PACKSTACK) Controller IP ADDRESS
 VSD_IP="192.168.1.181"                                                # VSD IP ADDRESS
+scp_user_access="root@1.2.3.4"                                        # SSH login to scp server for unrestricted access by script
 
 # Generate SSH key
 ssh-keygen -t rsa
-ssh-copy-id root@1.2.3.4
+ssh-copy-id $scp_user_access
 
 # Edit nova file
 sed -i 's/ovs_bridge=br-int/ovs_bridge=alubr0/g' /etc/nova/nova.conf
